@@ -69,7 +69,7 @@ collective
 
 ## Get Started
 
-Say you have changed the directory to the project $rootpath$.
+Say you have changed the directory to the project \$rootpath\$.
 
 Firstly, you should change the path to yourself datasets in `config.py`, as follows:
 
@@ -78,7 +78,7 @@ self.data_path = '/path/to/your/data/volleyball' #data path for the volleyball d
 self.data_path='/path/to/your/data/collective'  #data path for the collective dataset
 ```
 
-Then, replace the dataset path $dataset_dir$ in `collective.py` and `volleyball.py` as follows:
+Then, replace the dataset path \$dataset_dir\$ in `collective.py` and `volleyball.py` as follows:
 
 ```python
 dataset_dir = '/home/shelter/shelterX/data/collective' # collective dataset
