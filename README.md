@@ -3,7 +3,7 @@
 
 This is an official implementation of *Posed Mixed Dynamic Graph Convolution Network for Group Activity Recognition*, namely shelterX's Degree M.S. Thesis. In this repo, we open the PyTorch-based codebase corresponding to training and inference as described in the Thesis. The overall architecture of PDGCN is shown as below.
 
-![overall framwork of PDGCN](figures/2-branch_crop.pdf)
+![overall framwork of PDGCN](figures/PDGCN.jpg)
 
 ## Dependencies
 
@@ -15,7 +15,7 @@ This is an official implementation of *Posed Mixed Dynamic Graph Convolution Net
 - Torchvision: `0.11.2`
 - [RoIAlign for Pytorch](https://github.com/longcw/RoIAlign.pytorch)
 
-## Prepare Datasets
+## Datasets Preparation
 
 ### Download Videos and tracklets
 
@@ -37,7 +37,7 @@ You can refer to the following repo to extract keypoints of each frame using HRN
 
 - [https://github.com/hongluzhou/hrnet_pose_extract](https://github.com/hongluzhou/hrnet_pose_extract)
 
-Suppose you have prepared the data following above step, your `volleyball` directory tree should be like the below.
+Suppose you have prepared the data following above steps, your `volleyball` directory tree should be like this:
 
 ```shell
 volleyball
@@ -69,20 +69,20 @@ collective
 
 ## Get Started
 
-Say you have changed the directory to the project \$rootpath\$.
+Say you have changed the directory to the project rootpath `$PDGCN$`.
 
-Firstly, you should change the path to yourself datasets in `config.py`, as follows:
+Firstly, you should change the `data_path` into yourself in `config.py`, as follows:
 
 ```python
 self.data_path = '/path/to/your/data/volleyball' #data path for the volleyball dataset
 self.data_path='/path/to/your/data/collective'  #data path for the collective dataset
 ```
 
-Then, replace the dataset path \$dataset_dir\$ in `collective.py` and `volleyball.py` as follows:
+Then, replace the dataset path `dataset_dir` in `collective.py` and `volleyball.py` with yours, respectively:
 
 ```python
-dataset_dir = '/home/shelter/shelterX/data/collective' # collective dataset
-dataset_dir = '/home/shelter/shelterX/data/volleyball' # volleyball dataset
+dataset_dir = '/path/to/your/data/collective' # collective.py
+dataset_dir = '/path/to/your/data/volleyball' # volleyball.py
 ```
 
 1. **Train the Base Model**: Fine-tune the base model pretrained on ImageNet for two datasets.
