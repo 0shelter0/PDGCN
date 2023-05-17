@@ -120,3 +120,17 @@ dataset_dir = '/path/to/your/data/volleyball' # volleyball.py
         ```shell
         scripts/train_collective_stage2_pdgcn.py
         ```
+
+## Citation
+
+If you find our work or the repo useful and motivated to your study, please use the following BibTex entry for citation.
+
+```bibTex
+@mastersthesis{shelterX2023PDGCN,
+  author       = {ShelterX},
+  title        = {Posed Mixed Dynamic Graph Convolution Network for Group Activity Recognition},
+  location     = {Wuhan},
+  institution  = {Central China Normal University},
+  year         = {2023}
+}
+```
